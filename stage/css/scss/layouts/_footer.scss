@@ -1,0 +1,160 @@
+footer.footer-section {
+    background-color: #2f2e65;
+    padding: 3rem 0;
+    section.subscripe-section {
+        .subscripe-section-content {
+            position: relative;
+            header {
+                margin: 0 25px;
+                h4 {
+                    padding: 10px;
+                    background-color: #7d7ba9;
+                    color: #fff;
+                    font-size: 12px;
+                    font-family: "29ltbukrabold";
+                    margin: 0;
+                    text-align: center;
+                    line-height: 25px;
+                }
+            }
+            article {
+                background-color: #fff;
+                padding: 10px;
+                min-height: 170px;
+                margin: 0 25px;
+                form {
+                    padding: 25px 0;
+                    color: #7d7ba9;
+                    ::placeholder {
+                        color: #7d7ba9;
+                    }
+                    input {
+                        font-family: "AAJannatLT";
+                        color: #7d7ba9;
+                        font-weight: bold;
+                        border: none;
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                    button {
+                        position: absolute;
+                        bottom: 15%;
+                        left: 0;
+                        width: 100%;
+                        outline: none;
+                        border: none;
+                        color: #fff;
+                        background: #7d7ba9;
+                        font-size: 30px;
+                        font-family: "AAJannatLT";
+                        font-weight: bold;
+                        &::after, &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -6px;
+                            width: 0;
+                            height: 0;
+                            border: 0px solid transparent;
+                            border-top-width: 0px;
+                            border-bottom-width: 6px;
+                            border-right: 25px solid #7d7ba9;
+                        }
+                        &::after {
+                            left: 0;
+                        }
+                        &::before {
+                            right: 0;
+                            transform: scale(-1,1);
+                        }
+                    }
+                }
+            }
+        }
+        .imgs {
+            img {
+                padding: 5px;
+                height: 45px;
+                border-radius: 7px;
+            }
+        }
+    }
+    .about-section {
+        color: #fff;
+        header {
+            h3 {
+                font-size: 18px;
+                font-family: "Segoe";
+                font-weight: bold;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #fff;
+            }
+        }
+        article {
+            padding-top: 15px;
+            p {
+                font-family: "AAJannatLT";
+                font-size: 14px;
+            }
+            ul {
+                border-top: 1px solid #fff;
+                padding-top: 15px;
+                li {
+                    a {
+                        color: #fff;
+                        font-size: 25px;
+                        padding: 7px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-contact {
+        header {
+            h3 {
+                background-color: #7d7ba9;
+                color: #fff;
+                font-size: 18px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                padding: 7px 0;
+                position: relative;
+                &::after, &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -6px;
+                    width: 0;
+                    height: 0;
+                    border: 0px solid transparent;
+                    border-top-width: 0px;
+                    border-bottom-width: 6px;
+                    border-right: 25px solid #7d7ba9;
+                }
+                &::after {
+                    left: 0;
+                }
+                &::before {
+                    right: 0;
+                    transform: scale(-1,1);
+                }
+            }
+        }
+        article {
+            background: #fff;
+            margin: -10px 25px;
+            padding: 5px;
+            p, a {
+                display: block;
+                color: #7d7ba9;
+                margin-bottom: .6rem;
+                font-size: 13px;
+                font-family: "29ltbukrabold";
+                padding: 5px 0;
+                text-decoration: none;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+}

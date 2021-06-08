@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="en", dir="rtl")
     head
         include pug/layouts/meta
         include pug/layouts/links
     body
-        include pug/layouts/navbar
-        include pug/components/owel-carousel
+        section.home-page
+            include pug/layouts/navbar
+            section.main-section 
+                .container 
+                    .row.align-items-center
+                        .col-md-6.mb-3.order-2.order-md-1
+                            main
+                                header 
+                                    h1 شركة نوفل سيو
+                                article 
+                                    p تقدم افضل خدمات السيو نعمل على تحسين محركات البحث لنجاح عملك
+                        .col-md-6.mb-3.order-1.order-md-2
+                            .main-img 
+                                img.w-100(src="assets/main-img.png", alt="", srcset="")
         include pug/layouts/footer
         include pug/layouts/scripts

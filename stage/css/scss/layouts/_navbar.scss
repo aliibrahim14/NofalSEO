@@ -1,0 +1,50 @@
+section.navbar-section {
+    nav.navbar {
+        #navbarSupportedContent {
+            ul.navbar-nav {
+                @media(min-width: 992px){
+                    width: 70%;
+                    justify-content: space-between;
+                    border: 1px solid $mainColor;
+                    border-radius: 20px;
+                }
+                @media(max-width: 992px){
+                    margin-top: 15px !important;
+                }
+                overflow: hidden;
+                background-color: #fff;
+                .nav-item {
+                    .nav-link {
+                        color: $mainColor;
+                        transition: all .3s;
+                        text-align: start;
+                        padding-right: 1rem;
+                        padding-left: 1rem;
+                        font-family: "Segoe";
+                        font-weight: bold;
+                        &:hover {
+                            background-color: #f1f4ff;
+                        }
+                    }
+                }
+            }
+            div.form-inline {
+                button {
+                    border: 1px solid $mainColor;
+                    border-radius: 20px;
+                    background-color: #fff;
+                    min-height: 42px;
+                    min-width: 145px;
+                    outline: none;
+                    color: $mainColor;
+                    transition: all .3s;
+                    font-family: "Segoe";
+                    font-weight: bold;
+                    &:hover {
+                        background-color: #f1f4ff;
+                    }
+                }
+            }
+        }
+    }
+}
