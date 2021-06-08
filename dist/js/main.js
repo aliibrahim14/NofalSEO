@@ -3,10 +3,10 @@ $(function () {
     "use strict";
     $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
-            // rtl: true,
+            rtl: true,
             loop: true,
             margin: 30,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
             navText: ['<i class="fas fa-chevron-right"></i>', '<i class="fas fa-chevron-left"></i>'],
@@ -19,9 +19,6 @@ $(function () {
                 },
                 780: {
                     items: 3
-                },
-                1000: {
-                    items: 5
                 }
             }
         });
