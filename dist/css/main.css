@@ -86,6 +86,61 @@ section.home-page {
               width: 70%;
               font-size: 24px; } }
 
+.services-section {
+  padding: 4rem 0; }
+  .services-section header {
+    text-align: center; }
+    .services-section header h1 {
+      font-size: 45px;
+      font-family: "29ltbukrabold";
+      font-weight: bold;
+      color: #2f2e65;
+      margin-bottom: 15px; }
+      @media (max-width: 600px) {
+        .services-section header h1 {
+          font-size: 30px; } }
+    .services-section header .line {
+      border-top: 4px solid #7d7caa;
+      position: relative;
+      width: 50%;
+      margin: auto; }
+      .services-section header .line::before, .services-section header .line::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;
+        top: -7px;
+        background: #7d7caa; }
+      .services-section header .line::before {
+        left: 0; }
+      .services-section header .line::after {
+        right: 0; }
+    .services-section header h5 {
+      color: #2f2e65;
+      font-family: "Segoe";
+      font-weight: bold;
+      margin-top: 15px; }
+  .services-section article {
+    margin-top: 4rem; }
+    .services-section article .services-content {
+      padding: 20px;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+      .services-section article .services-content figure img {
+        height: 80px; }
+      .services-section article .services-content figure figcaption {
+        font-family: "29ltbukrabold";
+        font-weight: bold;
+        color: #2f2e65; }
+        .services-section article .services-content figure figcaption h3 {
+          font-size: 23px; }
+        .services-section article .services-content figure figcaption p {
+          font-family: "Segoe"; }
+      .services-section article .services-content:hover {
+        background-color: #f5f5f8;
+        border-radius: 40px; }
+
 footer.footer-section {
   background-color: #2f2e65;
   padding: 3rem 0; }

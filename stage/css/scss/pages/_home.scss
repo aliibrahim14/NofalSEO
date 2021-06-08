@@ -35,3 +35,74 @@ section.home-page {
         }
     }
 }
+
+.services-section {
+    padding: 4rem 0;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 45px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: $mainColor;
+            margin-bottom: 15px;
+        }
+        .line {
+            border-top: 4px solid #7d7caa;
+            position: relative;
+            width: 50%;
+            margin: auto;
+            &::before, &::after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                position: absolute;
+                top: -7px;
+                background: #7d7caa;
+            }
+            &::before {
+                left:0;
+            }
+            &::after {
+                right:0;
+            }
+        }
+        h5 {
+            color: $mainColor;
+            font-family: "Segoe";
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    }
+    article {
+        margin-top: 4rem;
+        .services-content {
+            padding: 20px;
+            transition: all .3s;
+            figure {
+                img {
+                    height: 80px;
+                }
+                figcaption {
+                    font-family: "29ltbukrabold";
+                    font-weight: bold;
+                    color: $mainColor;
+                    h3 {
+                        font-size: 23px;
+                    }
+                    p {
+                        font-family: "Segoe";
+                    }
+                }
+            }
+            &:hover {
+                background-color: #f5f5f8;
+                border-radius: 40px;
+            }
+        }
+    }
+}
