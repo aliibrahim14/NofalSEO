@@ -3,7 +3,7 @@
   font-family: "Cooper"; }
 
 @font-face {
-  src: url("../fonts/29ltbukrabold.otf");
+  src: url("../fonts/29ltbukrabold.ttf");
   font-family: "29ltbukrabold"; }
 
 @font-face {
@@ -393,6 +393,93 @@ section.home-page {
         font-weight: bold;
         color: #2f2e65 !important;
         text-decoration: none; }
+
+section.blog-page {
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  section.blog-page section.main-section {
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.blog-page section.main-section header {
+      text-align: center; }
+      section.blog-page section.main-section header h1 {
+        font-size: 70px;
+        font-family: "29ltbukrabold";
+        font-weight: bold;
+        color: #2f2e65; }
+        @media (max-width: 600px) {
+          section.blog-page section.main-section header h1 {
+            font-size: 30px; } }
+
+.blog-developments {
+  padding: 4rem 0; }
+  .blog-developments header {
+    text-align: center; }
+    .blog-developments header h1 {
+      font-size: 45px;
+      font-family: "29ltbukrabold";
+      font-weight: bold;
+      color: #2f2e65; }
+      @media (max-width: 600px) {
+        .blog-developments header h1 {
+          font-size: 30px; } }
+  .blog-developments article .card {
+    border-radius: 57px 57px 25px 25px;
+    overflow: hidden;
+    border: none;
+    color: #2f2e65;
+    background-color: #f5f5f8; }
+    .blog-developments article .card .card-body {
+      text-align: start; }
+      .blog-developments article .card .card-body h5 {
+        font-family: "29ltbukrabold";
+        font-weight: bold;
+        color: #2f2e65 !important; }
+      .blog-developments article .card .card-body p {
+        font-family: "Segoe";
+        font-size: 17px;
+        font-weight: bold;
+        color: #2f2e65 !important; }
+    .blog-developments article .card .card-footer {
+      background: #2f2e65;
+      border: none;
+      text-align: center;
+      border: none; }
+      .blog-developments article .card .card-footer a {
+        font-family: "29ltbukrabold";
+        font-weight: bold;
+        color: #fff !important;
+        text-decoration: none; }
+  .blog-developments article nav .pagination .page-item {
+    margin: 4px; }
+    .blog-developments article nav .pagination .page-item a {
+      color: #2f2e65;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+      .blog-developments article nav .pagination .page-item a:hover {
+        background-color: #2f2e65;
+        color: #fff; }
+    .blog-developments article nav .pagination .page-item:first-child a, .blog-developments article nav .pagination .page-item:last-child a {
+      border-radius: 5px;
+      border: none;
+      font-size: 20px;
+      color: #2f2e65; }
+      .blog-developments article nav .pagination .page-item:first-child a:hover, .blog-developments article nav .pagination .page-item:last-child a:hover {
+        background-color: #2f2e65;
+        color: #fff; }
 
 footer.footer-section {
   background-color: #2f2e65;

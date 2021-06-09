@@ -1,0 +1,105 @@
+section.blog-page {
+    background-image: url('../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    section.main-section {
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        header {
+            text-align: center;
+            h1 {
+                @media(max-width: 600px) {
+                    font-size: 30px;
+                }
+                font-size: 70px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.blog-developments {
+    padding: 4rem 0;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 45px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: $mainColor;
+        }
+    }
+    article {
+        .card {
+            border-radius: 57px 57px 25px 25px;
+            overflow: hidden;
+            border: none;
+            color: $mainColor;
+            background-color: #f5f5f8;
+            .card-body {
+                text-align: start;
+                h5 {
+                    font-family: "29ltbukrabold";
+                    font-weight: bold;
+                    color: $mainColor !important;
+                }
+                p {
+                    font-family: "Segoe";
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: $mainColor !important;
+                }
+            }
+            .card-footer{
+                background: $mainColor;
+                border: none;
+                text-align: center;
+                border: none;
+                a {
+                    font-family: "29ltbukrabold";
+                    font-weight: bold;
+                    color: #fff !important;
+                    text-decoration: none;
+                }
+            }
+        }
+        nav {
+            .pagination {
+                .page-item {
+                    margin: 4px;
+                    a {
+                        color: $mainColor;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        transition: all .3s;
+                        &:hover {
+                            background-color: $mainColor;
+                            color: #fff;
+                        }
+                    }
+                    &:first-child, &:last-child {
+                        a {
+                            border-radius: 5px;
+                            border: none;
+                            font-size: 20px;
+                            color: $mainColor;
+                            &:hover {
+                                background-color: $mainColor;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
