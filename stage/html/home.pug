@@ -1,3 +1,4 @@
+- var pageTitle = 'home';
 <!DOCTYPE html>
 html(lang="en", dir="rtl")
     head
@@ -204,5 +205,90 @@ html(lang="en", dir="rtl")
                                     button
                                         img(src="assets/arrow.png", alt="", srcset="")
                                         | اشترك الان
+        section.customers-section 
+            .container
+                header
+                    h1 عملاء نفتخر بهم
+                    h5 هذه عينة من عملاء إستفادو من خدماتنا
+            article 
+                .container
+                    .owel-carousel
+                        .owl-carousel.owl-theme.customers
+                            .item
+                                .brand-img 
+                                    img(src="assets/brand1.png", alt="", srcset="")
+                            .item
+                                .brand-img 
+                                    img(src="assets/brand3.png", alt="", srcset="")
+                            .item
+                                .brand-img 
+                                    img(src="assets/brand1.png", alt="", srcset="")
+                            .item
+                                .brand-img 
+                                    img(src="assets/brand3.png", alt="", srcset="")
+        section.common-questions 
+            .container 
+                header 
+                    h1 اسئلة شائعة
+                article.pt-5
+                    .row.justify-content-center
+                        .col-lg-6.col-md-10 
+                            #accordionExample.accordion
+                                .card
+                                    #headingOne.card-header
+                                        h2.mb-0
+                                            button.btn.btn-link.btn-block(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                                                | سؤال شائع هنكتبه هنا ؟
+                                    #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+                                        .card-body
+                                            | تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة
+                                .card.my-4
+                                    #headingTwo.card-header
+                                        h2.mb-0
+                                            button.btn.btn-link.btn-block.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                                                | سؤال شائع هنكتبه هنا ؟
+                                    #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+                                        .card-body
+                                            | تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة
+                                .card
+                                    #headingThree.card-header
+                                        h2.mb-0
+                                            button.btn.btn-link.btn-block.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                                                | سؤال شائع هنكتبه هنا ؟
+                                    #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+                                        .card-body
+                                            | تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة
+        section.customers-developments 
+            .container 
+                header 
+                    h1 تطورات عملائنا فى اختصار
+                article.mt-5
+                    .row
+                        .col-lg-4.col-sm-6.mb-4
+                            .card.h-100
+                                img.card-img-top(src='assets/cus.png' alt='...')
+                                .card-body
+                                    h5.card-title تطورات عملائنا فى اختصار
+                                    p.card-text
+                                        | تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة
+                                .card-footer
+                                    a(href='#') اقرأ المزيد
+                        .col-lg-4.col-sm-6.mb-4
+                            .card.h-100
+                                img.card-img-top(src='assets/cus.png' alt='...')
+                                .card-body
+                                    h5.card-title تطورات عملائنا فى اختصار
+                                    p.card-text تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة
+                                .card-footer
+                                    a(href='#') اقرأ المزيد
+                        .col-lg-4.col-sm-6.mb-4
+                            .card.h-100
+                                img.card-img-top(src='assets/cus.png' alt='...')
+                                .card-body
+                                    h5.card-title تطورات عملائنا فى اختصار
+                                    p.card-text
+                                        | تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة تعرف على مختلف الخدمات التى تقدمها الشركة
+                                .card-footer
+                                    a(href='#') اقرأ المزيد
         include pug/layouts/footer
         include pug/layouts/scripts

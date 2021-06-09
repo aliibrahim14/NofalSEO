@@ -25,6 +25,9 @@ section.navbar-section {
                         &:hover {
                             background-color: #f1f4ff;
                         }
+                        &.active{
+                            background-color: #f1f4ff;
+                        }
                     }
                 }
             }

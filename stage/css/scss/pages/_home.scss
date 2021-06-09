@@ -258,3 +258,160 @@ section.home-page {
         }
     }
 }
+
+.customers-section {
+    margin: 4rem 0;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 45px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: $mainColor;
+        }
+        h5 {
+            color: $mainColor;
+            font-family: "Segoe";
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 25px;
+        }
+    }
+    article {
+        margin-top: 3rem;
+        border-top: 5px solid $mainColor;
+        border-bottom: 5px solid $mainColor;
+        padding: 30px 0;
+        border-radius: 10px;
+        .brand-img {
+            img {
+                width: 50% !important;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.common-questions {
+    background-image: url('../assets/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    padding: 4rem 0;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 45px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    article {
+        .card {
+            background-color: #fff;
+            border-radius: 25px !important;
+            color: $mainColor;
+            .card-header {
+                background: transparent;
+                border: none;
+                margin-bottom: 0;
+                button {
+                    @media(max-width: 600px) {
+                        font-size: 19px;
+                    }
+                    font-family: "29ltbukrabold";
+                    font-weight: bold;
+                    color: $mainColor;
+                    font-size: 25px;
+                    text-decoration: none;
+                    transition: all .3s;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    &.collapsed {
+                        &::after {
+                            content: "\f067";
+                            font-family: "Font Awesome 5 Free";
+                            display: inline-block;
+                            padding-right: 15px;
+                            vertical-align: middle;
+                            transition: all .3s;
+                        }
+                    }
+                    &::after {
+                        content: "\f2d1";
+                        font-family: "Font Awesome 5 Free";
+                        display: inline-block;
+                        padding-right: 15px;
+                        vertical-align: middle;
+                        transition: all .3s;
+                    }
+                }
+            }
+            .card-body {
+                padding-top: 0;
+                font-family: "Segoe";
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.customers-developments {
+    padding: 4rem 0;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 45px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: $mainColor;
+        }
+    }
+    article {
+        .card {
+            border-radius: 57px 57px 0 0;
+            overflow: hidden;
+            border: none;
+            color: $mainColor;
+            background-color: #f5f5f8;
+            .card-body {
+                text-align: start;
+                padding-bottom: 0;
+                h5 {
+                    font-family: "29ltbukrabold";
+                    font-weight: bold;
+                    color: $mainColor !important;
+                }
+                p {
+                    font-family: "Segoe";
+                    font-size: 17px;
+                    font-weight: bold;
+                    color: $mainColor !important;
+                }
+            }
+            .card-footer{
+                background: transparent;
+                border: none;
+                a {
+                    font-family: "29ltbukrabold";
+                    font-weight: bold;
+                    color: $mainColor !important;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
