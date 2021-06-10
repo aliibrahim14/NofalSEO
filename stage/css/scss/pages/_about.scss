@@ -1,0 +1,138 @@
+section.about-page {
+    background-image: url('../assets/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    section.main-section {
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 9rem;
+        header {
+            text-align: center;
+            h1 {
+                @media(max-width: 600px) {
+                    font-size: 30px;
+                }
+                font-size: 40px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                color: $mainColor;
+            }
+            h5 {
+                color: $mainColor;
+                font-family: "Segoe";
+                font-weight: bold;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+section.about-content {
+    article {
+        .white-bg {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .services-details {
+            color: $mainColor;
+            h3 {
+                @media(max-width: 600px) {
+                    font-size: 30px;
+                }
+                font-size: 40px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p {
+                font-family: "Segoe";
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.about-customers {
+    background-image: url('../assets/c1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding: 5rem 0;
+    .customers-section {
+        article {
+            background-color: #fff;
+        }
+    } 
+}
+
+.customers-review {
+    padding: 5rem 0;
+    background-image: url('../assets/c2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 40px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: #fff;
+            background-color: $mainColor;
+            padding: 20px 0;
+            max-width: 540px;
+            border-radius: 20px 57px;
+            margin: auto;
+        }
+    }
+    article {
+        padding-top: 5rem;
+        .review-content {
+            display: flex;
+            align-items: center;
+            .person-img {
+                width: 280px;
+                img {
+                    border-radius: 15px;
+                    border: 2px solid $mainColor;
+                }
+            }
+            .person-details {
+                text-align: start;
+                .rating {
+                    ul {
+                        li {
+                            margin-left: 5px;
+                            i {
+                                @media(max-width: 490px) {
+                                    font-size: 17px;
+                                }
+                                color: #f8c31b;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    p {
+                        @media(max-width: 490px) {
+                            font-size: 13px;
+                        }
+                        font-family: "Segoe";
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: $mainColor;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.customers-section {
+    margin: 4rem 0;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 45px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: $mainColor;
+        }
+        h5 {
+            color: $mainColor;
+            font-family: "Segoe";
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 25px;
+        }
+    }
+    article {
+        margin-top: 3rem;
+        border-top: 5px solid $mainColor;
+        border-bottom: 5px solid $mainColor;
+        padding: 30px 0;
+        border-radius: 10px;
+        .brand-img {
+            img {
+                width: 50% !important;
+                margin: auto;
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 section.team-page {
-    background-image: url('../assets/bg.jpg');
+    background-image: url('../assets/team-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,6 +8,7 @@ section.team-page {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 9rem;
         header {
             text-align: center;
             h1 {
