@@ -1,0 +1,144 @@
+section.market-page {
+    background-image: url('../assets/market-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    section.main-section {
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 9rem;
+        header {
+            text-align: center;
+            h1 {
+                @media(max-width: 600px) {
+                    font-size: 30px;
+                }
+                font-size: 40px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.market-content {
+    padding: 4rem 0;
+    article {
+        .markert-parent {
+            background-color: #f5f5f8;
+            padding: 25px;
+            border-radius: 25px;
+            .market-card  {
+                display: flex;
+                align-items: center;
+                @media(max-width: 570px){
+                    flex-direction: column;
+                }
+                .market-img {
+                    @media(max-width: 570px){
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    width: 40%;
+                    img {
+                        border-radius: 30px;
+                    }
+                }
+                .market-details {
+                    @media(max-width: 570px){
+                        width: 100%;
+                        text-align: center;
+                    }
+                    width: 60%;
+                    text-align: start;
+                    .content {
+                        header {
+                            h3 {
+                                font-size: 18px;
+                                font-family: "29ltbukrabold";
+                                font-weight: bold;
+                                color: $mainColor;
+                            }
+                        }
+                        article {
+                            p {
+                                font-family: "Segoe";
+                                font-weight: bold;
+                                font-size: 15px;
+                                color: $mainColor;
+                                margin-bottom: 7px;
+                            }
+                        }
+                    }
+                    .rating {
+                        ul {
+                            @media(max-width: 570px){
+                                justify-content: center;
+                            }
+                            li {
+                                margin-left: 5px;
+                                i {
+                                    color: #f8c31b;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                    .action {
+                        button {
+                            background-color: $mainColor;
+                            color: #fff;
+                            font-size: 14px;
+                            font-family: "29ltbukrabold";
+                            font-weight: bold;
+                            border: 1px solid $mainColor;
+                            outline: none;
+                            transition: all .3s;
+                            border-radius: 20px;
+                            padding: 7px 0;
+                            min-width: 120px;
+                            margin-top: 7px;
+                            &:hover {
+                                background-color: transparent;
+                                color: $mainColor;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+        nav {
+            .pagination {
+                .page-item {
+                    margin: 4px;
+                    a {
+                        color: $mainColor;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        transition: all .3s;
+                        &:hover {
+                            background-color: $mainColor;
+                            color: #fff;
+                        }
+                    }
+                    &:first-child, &:last-child {
+                        a {
+                            border-radius: 5px;
+                            border: none;
+                            font-size: 20px;
+                            color: $mainColor;
+                            &:hover {
+                                background-color: $mainColor;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
