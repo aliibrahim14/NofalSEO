@@ -1,0 +1,65 @@
+section.contact-page {
+    background-image: url('../assets/contact-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    section.main-section {
+        @extend %page-header;
+    }
+}
+
+section.contact-content {
+    .contact-card {
+        text-align: center;
+        .contact-icon {
+            img {
+                width: 60px;
+            }
+        }
+        .contact-link {
+            a {
+                text-decoration: none;
+                font-size: 30px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                color: $mainColor;
+                display: block;
+                margin: 15px 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                direction: ltr;
+                @media(max-width: 600px) {
+                    font-size: 20px;
+                }
+            }
+            p {
+                color: $mainColor;
+                font-size: 18px;
+                font-family: "Segoe";
+                font-weight: bold;
+            }
+        }
+    }
+    .contact-form {
+        text-align: start;
+        label {
+            color: $mainColor;
+            font-size: 18px;
+            font-family: "Segoe";
+            font-weight: bold;
+        }
+        input, textarea {
+            border: 2px solid $mainColor;
+            border-radius: 20px;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border-color: $mainColor;
+            }
+        }
+        button {
+            @extend %buttons ;
+        }
+    }
+}

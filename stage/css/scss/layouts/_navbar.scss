@@ -1,5 +1,8 @@
 section.navbar-section {
     nav.navbar {
+        .navbar-toggler {
+            outline: none;
+        }
         #navbarSupportedContent {
             ul.navbar-nav {
                 @media(min-width: 992px){

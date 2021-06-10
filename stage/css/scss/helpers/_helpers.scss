@@ -1,3 +1,50 @@
 ul {
     padding-right: 0 !important;
 }
+
+%page-header {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 9rem;
+    header {
+        text-align: center;
+        h1 {
+            @media(max-width: 600px) {
+                font-size: 30px;
+            }
+            font-size: 40px;
+            font-family: "29ltbukrabold";
+            font-weight: bold;
+            color: $mainColor;
+        }
+        .line {
+            border-top: 4px solid #7d7caa;
+            position: relative;
+            width: 50%;
+            margin: auto;
+            &::before, &::after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                position: absolute;
+                top: -7px;
+                background: #7d7caa;
+            }
+            &::before {
+                left:0;
+            }
+            &::after {
+                right:0;
+            }
+        }
+        h5 {
+            color: $mainColor;
+            font-family: "Segoe";
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    }
+}

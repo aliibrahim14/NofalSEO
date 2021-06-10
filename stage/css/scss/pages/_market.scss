@@ -4,23 +4,7 @@ section.market-page {
     background-size: cover;
     background-position: center;
     section.main-section {
-        min-height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 9rem;
-        header {
-            text-align: center;
-            h1 {
-                @media(max-width: 600px) {
-                    font-size: 30px;
-                }
-                font-size: 40px;
-                font-family: "29ltbukrabold";
-                font-weight: bold;
-                color: $mainColor;
-            }
-        }
+        @extend %page-header;
     }
 }
 
@@ -89,22 +73,7 @@ section.market-page {
                     }
                     .action {
                         button {
-                            background-color: $mainColor;
-                            color: #fff;
-                            font-size: 14px;
-                            font-family: "29ltbukrabold";
-                            font-weight: bold;
-                            border: 1px solid $mainColor;
-                            outline: none;
-                            transition: all .3s;
-                            border-radius: 20px;
-                            padding: 7px 0;
-                            min-width: 120px;
-                            margin-top: 7px;
-                            &:hover {
-                                background-color: transparent;
-                                color: $mainColor;
-                            }
+                            @extend %buttons ;
                         }
                     }
                 }

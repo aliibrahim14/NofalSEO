@@ -1,0 +1,18 @@
+%buttons {
+    background-color: $mainColor;
+    color: #fff;
+    font-size: 14px;
+    font-family: "29ltbukrabold";
+    font-weight: bold;
+    border: 1px solid $mainColor;
+    outline: none;
+    transition: all .3s;
+    border-radius: 20px;
+    padding: 7px 0;
+    min-width: 120px;
+    margin-top: 7px;
+    &:hover {
+        background-color: transparent;
+        color: $mainColor;
+    }
+}

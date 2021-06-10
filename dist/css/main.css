@@ -14,6 +14,9 @@
   src: url("../fonts/Segoe.UI.ttf");
   font-family: "Segoe"; }
 
+section.navbar-section nav.navbar .navbar-toggler {
+  outline: none; }
+
 section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav {
   overflow: hidden;
   background-color: #fff; }
@@ -59,6 +62,69 @@ section.navbar-section nav.navbar #navbarSupportedContent div.form-inline button
 
 ul {
   padding-right: 0 !important; }
+
+section.about-page section.main-section, section.services-page section.main-section, section.team-page section.main-section, section.blog-page section.main-section, section.market-page section.main-section, section.contact-page section.main-section {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 9rem; }
+  section.about-page section.main-section header, section.services-page section.main-section header, section.team-page section.main-section header, section.blog-page section.main-section header, section.market-page section.main-section header, section.contact-page section.main-section header {
+    text-align: center; }
+    section.about-page section.main-section header h1, section.services-page section.main-section header h1, section.team-page section.main-section header h1, section.blog-page section.main-section header h1, section.market-page section.main-section header h1, section.contact-page section.main-section header h1 {
+      font-size: 40px;
+      font-family: "29ltbukrabold";
+      font-weight: bold;
+      color: #2f2e65; }
+      @media (max-width: 600px) {
+        section.about-page section.main-section header h1, section.services-page section.main-section header h1, section.team-page section.main-section header h1, section.blog-page section.main-section header h1, section.market-page section.main-section header h1, section.contact-page section.main-section header h1 {
+          font-size: 30px; } }
+    section.about-page section.main-section header .line, section.services-page section.main-section header .line, section.team-page section.main-section header .line, section.blog-page section.main-section header .line, section.market-page section.main-section header .line, section.contact-page section.main-section header .line {
+      border-top: 4px solid #7d7caa;
+      position: relative;
+      width: 50%;
+      margin: auto; }
+      section.about-page section.main-section header .line::before, section.services-page section.main-section header .line::before, section.team-page section.main-section header .line::before, section.blog-page section.main-section header .line::before, section.market-page section.main-section header .line::before, section.contact-page section.main-section header .line::before, section.about-page section.main-section header .line::after, section.services-page section.main-section header .line::after, section.team-page section.main-section header .line::after, section.blog-page section.main-section header .line::after, section.market-page section.main-section header .line::after, section.contact-page section.main-section header .line::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;
+        top: -7px;
+        background: #7d7caa; }
+      section.about-page section.main-section header .line::before, section.services-page section.main-section header .line::before, section.team-page section.main-section header .line::before, section.blog-page section.main-section header .line::before, section.market-page section.main-section header .line::before, section.contact-page section.main-section header .line::before {
+        left: 0; }
+      section.about-page section.main-section header .line::after, section.services-page section.main-section header .line::after, section.team-page section.main-section header .line::after, section.blog-page section.main-section header .line::after, section.market-page section.main-section header .line::after, section.contact-page section.main-section header .line::after {
+        right: 0; }
+    section.about-page section.main-section header h5, section.services-page section.main-section header h5, section.team-page section.main-section header h5, section.blog-page section.main-section header h5, section.market-page section.main-section header h5, section.contact-page section.main-section header h5 {
+      color: #2f2e65;
+      font-family: "Segoe";
+      font-weight: bold;
+      margin-top: 15px; }
+
+.market-content article .markert-parent .market-card .market-details .action button, section.contact-content .contact-form button {
+  background-color: #2f2e65;
+  color: #fff;
+  font-size: 14px;
+  font-family: "29ltbukrabold";
+  font-weight: bold;
+  border: 1px solid #2f2e65;
+  outline: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 20px;
+  padding: 7px 0;
+  min-width: 120px;
+  margin-top: 7px; }
+  .market-content article .markert-parent .market-card .market-details .action button:hover, section.contact-content .contact-form button:hover {
+    background-color: transparent;
+    color: #2f2e65; }
 
 .customers-section {
   margin: 4rem 0; }
@@ -398,33 +464,6 @@ section.about-page {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  section.about-page section.main-section {
-    min-height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 9rem; }
-    section.about-page section.main-section header {
-      text-align: center; }
-      section.about-page section.main-section header h1 {
-        font-size: 40px;
-        font-family: "29ltbukrabold";
-        font-weight: bold;
-        color: #2f2e65; }
-        @media (max-width: 600px) {
-          section.about-page section.main-section header h1 {
-            font-size: 30px; } }
-      section.about-page section.main-section header h5 {
-        color: #2f2e65;
-        font-family: "Segoe";
-        font-weight: bold;
-        margin-top: 15px; }
 
 section.about-content article .white-bg {
   padding: 5rem 0;
@@ -514,50 +553,6 @@ section.services-page {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  section.services-page section.main-section {
-    min-height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 9rem; }
-    section.services-page section.main-section header {
-      text-align: center; }
-      section.services-page section.main-section header h1 {
-        font-size: 40px;
-        font-family: "29ltbukrabold";
-        font-weight: bold;
-        color: #2f2e65; }
-        @media (max-width: 600px) {
-          section.services-page section.main-section header h1 {
-            font-size: 30px; } }
-      section.services-page section.main-section header .line {
-        border-top: 4px solid #7d7caa;
-        position: relative;
-        width: 50%;
-        margin: auto; }
-        section.services-page section.main-section header .line::before, section.services-page section.main-section header .line::after {
-          content: "";
-          width: 10px;
-          height: 10px;
-          border-radius: 100%;
-          position: absolute;
-          top: -7px;
-          background: #7d7caa; }
-        section.services-page section.main-section header .line::before {
-          left: 0; }
-        section.services-page section.main-section header .line::after {
-          right: 0; }
-      section.services-page section.main-section header h5 {
-        color: #2f2e65;
-        font-family: "Segoe";
-        font-weight: bold;
-        margin-top: 15px; }
 
 section.services-content article .gray-bg {
   background-color: #f1f4ff; }
@@ -586,28 +581,6 @@ section.team-page {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  section.team-page section.main-section {
-    min-height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 9rem; }
-    section.team-page section.main-section header {
-      text-align: center; }
-      section.team-page section.main-section header h1 {
-        font-size: 40px;
-        font-family: "29ltbukrabold";
-        font-weight: bold;
-        color: #2f2e65; }
-        @media (max-width: 600px) {
-          section.team-page section.main-section header h1 {
-            font-size: 30px; } }
 
 .team-content-section {
   padding: 4rem 0; }
@@ -677,28 +650,6 @@ section.blog-page {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  section.blog-page section.main-section {
-    min-height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 9rem; }
-    section.blog-page section.main-section header {
-      text-align: center; }
-      section.blog-page section.main-section header h1 {
-        font-size: 40px;
-        font-family: "29ltbukrabold";
-        font-weight: bold;
-        color: #2f2e65; }
-        @media (max-width: 600px) {
-          section.blog-page section.main-section header h1 {
-            font-size: 30px; } }
 
 .blog-developments {
   padding: 4rem 0; }
@@ -765,28 +716,6 @@ section.market-page {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  section.market-page section.main-section {
-    min-height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 9rem; }
-    section.market-page section.main-section header {
-      text-align: center; }
-      section.market-page section.main-section header h1 {
-        font-size: 40px;
-        font-family: "29ltbukrabold";
-        font-weight: bold;
-        color: #2f2e65; }
-        @media (max-width: 600px) {
-          section.market-page section.main-section header h1 {
-            font-size: 30px; } }
 
 .market-content {
   padding: 4rem 0; }
@@ -843,23 +772,6 @@ section.market-page {
           .market-content article .markert-parent .market-card .market-details .rating ul li i {
             color: #f8c31b;
             font-size: 17px; }
-        .market-content article .markert-parent .market-card .market-details .action button {
-          background-color: #2f2e65;
-          color: #fff;
-          font-size: 14px;
-          font-family: "29ltbukrabold";
-          font-weight: bold;
-          border: 1px solid #2f2e65;
-          outline: none;
-          -webkit-transition: all .3s;
-          transition: all .3s;
-          border-radius: 20px;
-          padding: 7px 0;
-          min-width: 120px;
-          margin-top: 7px; }
-          .market-content article .markert-parent .market-card .market-details .action button:hover {
-            background-color: transparent;
-            color: #2f2e65; }
   .market-content article nav .pagination .page-item {
     margin: 4px; }
     .market-content article nav .pagination .page-item a {
@@ -880,6 +792,53 @@ section.market-page {
       .market-content article nav .pagination .page-item:first-child a:hover, .market-content article nav .pagination .page-item:last-child a:hover {
         background-color: #2f2e65;
         color: #fff; }
+
+section.contact-page {
+  background-image: url("../assets/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+section.contact-content .contact-card {
+  text-align: center; }
+  section.contact-content .contact-card .contact-icon img {
+    width: 60px; }
+  section.contact-content .contact-card .contact-link a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "29ltbukrabold";
+    font-weight: bold;
+    color: #2f2e65;
+    display: block;
+    margin: 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr; }
+    @media (max-width: 600px) {
+      section.contact-content .contact-card .contact-link a {
+        font-size: 20px; } }
+  section.contact-content .contact-card .contact-link p {
+    color: #2f2e65;
+    font-size: 18px;
+    font-family: "Segoe";
+    font-weight: bold; }
+
+section.contact-content .contact-form {
+  text-align: start; }
+  section.contact-content .contact-form label {
+    color: #2f2e65;
+    font-size: 18px;
+    font-family: "Segoe";
+    font-weight: bold; }
+  section.contact-content .contact-form input, section.contact-content .contact-form textarea {
+    border: 2px solid #2f2e65;
+    border-radius: 20px; }
+    section.contact-content .contact-form input:focus, section.contact-content .contact-form textarea:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      outline: none;
+      border-color: #2f2e65; }
 
 footer.footer-section {
   background-color: #2f2e65;

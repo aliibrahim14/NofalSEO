@@ -1,0 +1,62 @@
+- var pageTitle = 'contact';
+<!DOCTYPE html>
+html(lang="en", dir="rtl")
+    head
+        include pug/layouts/meta
+        include pug/layouts/links
+    body
+        section.contact-page
+            include pug/layouts/navbar
+            section.main-section 
+                .container 
+                    header 
+                        h1.wow.fadeInUp(data-wow-duration="2s") اتصل بنا
+                        h5 يسعدنا وصولك لمعلومات الإتصال
+        section.contact-content 
+            .container 
+                .row 
+                    .col-md-6.mb-5 
+                        .contact-card 
+                            .contact-icon 
+                                img(src="assets/call.png", alt="", srcset="")
+                            .contact-link 
+                                a(href="tel:+201021226980") 01021226980
+                                p يمكنك الاتصال على الرقم او ارسال رسالة من خلال الواتساب
+                    .col-md-6.mb-5 
+                        .contact-card 
+                            .contact-icon 
+                                img(src="assets/gmail4.png", alt="", srcset="")
+                            .contact-link 
+                                a(href="mailto:info@nofalseo.com") info@nofalseo.com
+                                p يمكنك ارسال رسالة على البريد الالكترونى وسنقوم بالرد عليك
+                .row.align-items-end
+                    .col-md-6.mb-5
+                        .contact-form 
+                            form
+                                .row
+                                    .form-group.col-md-6
+                                        label(for="") الإسم
+                                        input.form-control(type='text')
+                                    .form-group.col-md-6
+                                        label(for="") البريد الإلكترونى
+                                        input.form-control(type='email')
+                                    .form-group.col-md-6
+                                        label(for="") رقم الهاتف
+                                        input.form-control(type='text')
+                                    .form-group.col-md-6
+                                        label(for="") رابط موقعك
+                                        input.form-control(type='url')
+                                    .form-group.col-md-12
+                                        label(for="") الرسالة
+                                        textarea.form-control(rows="4")
+                                    .form-group.col-md-12.text-center
+                                        button(type="submit") إرسال
+                    .col-md-6.mb-5
+                        .contact-card 
+                            .contact-icon 
+                                img(src="assets/location.png", alt="", srcset="")
+                            .contact-link 
+                                p.my-4 محافظة المنوفية منوف بجوار مجلس المدينة برج قراقيش الدور الخامس
+                                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3438.916316726307!2d30.93519988487502!3d30.466808281730614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDI4JzAwLjUiTiAzMMKwNTUnNTguOCJF!5e0!3m2!1sar!2seg!4v1622647492735!5m2!1sar!2seg' width='100%' height='300' style='border:0;' allowfullscreen='' loading='lazy')
+        include pug/layouts/footer
+        include pug/layouts/scripts

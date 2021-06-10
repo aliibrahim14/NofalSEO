@@ -4,29 +4,7 @@ section.about-page {
     background-size: cover;
     background-position: center;
     section.main-section {
-        min-height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 9rem;
-        header {
-            text-align: center;
-            h1 {
-                @media(max-width: 600px) {
-                    font-size: 30px;
-                }
-                font-size: 40px;
-                font-family: "29ltbukrabold";
-                font-weight: bold;
-                color: $mainColor;
-            }
-            h5 {
-                color: $mainColor;
-                font-family: "Segoe";
-                font-weight: bold;
-                margin-top: 15px;
-            }
-        }
+        @extend %page-header;
     }
 }
 
