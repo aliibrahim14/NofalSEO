@@ -1,0 +1,80 @@
+section.services-page {
+    background-image: url('../assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    section.main-section {
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        header {
+            text-align: center;
+            h1 {
+                @media(max-width: 600px) {
+                    font-size: 30px;
+                }
+                font-size: 40px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                color: $mainColor;
+            }
+            .line {
+                border-top: 4px solid #7d7caa;
+                position: relative;
+                width: 50%;
+                margin: auto;
+                &::before, &::after {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: -7px;
+                    background: #7d7caa;
+                }
+                &::before {
+                    left:0;
+                }
+                &::after {
+                    right:0;
+                }
+            }
+            h5 {
+                color: $mainColor;
+                font-family: "Segoe";
+                font-weight: bold;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+section.services-content {
+    article {
+        .gray-bg {
+            background-color: #f1f4ff;
+        }
+        .gray-bg, .white-bg {
+            padding: 9rem 0;
+        }
+        .services-details {
+            color: $mainColor;
+            text-align: start;
+            h3 {
+                @media(max-width: 600px) {
+                    font-size: 30px;
+                }
+                font-size: 40px;
+                font-family: "29ltbukrabold";
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p {
+                font-family: "Segoe";
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+}

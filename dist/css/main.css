@@ -161,7 +161,6 @@ section.home-page {
         font-size: 30px; } }
 
 .team-section article {
-  padding: 4rem 0;
   background-image: url("../assets/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -413,7 +412,7 @@ section.blog-page {
     section.blog-page section.main-section header {
       text-align: center; }
       section.blog-page section.main-section header h1 {
-        font-size: 70px;
+        font-size: 40px;
         font-family: "29ltbukrabold";
         font-weight: bold;
         color: #2f2e65; }
@@ -480,6 +479,167 @@ section.blog-page {
       .blog-developments article nav .pagination .page-item:first-child a:hover, .blog-developments article nav .pagination .page-item:last-child a:hover {
         background-color: #2f2e65;
         color: #fff; }
+
+section.services-page {
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  section.services-page section.main-section {
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.services-page section.main-section header {
+      text-align: center; }
+      section.services-page section.main-section header h1 {
+        font-size: 40px;
+        font-family: "29ltbukrabold";
+        font-weight: bold;
+        color: #2f2e65; }
+        @media (max-width: 600px) {
+          section.services-page section.main-section header h1 {
+            font-size: 30px; } }
+      section.services-page section.main-section header .line {
+        border-top: 4px solid #7d7caa;
+        position: relative;
+        width: 50%;
+        margin: auto; }
+        section.services-page section.main-section header .line::before, section.services-page section.main-section header .line::after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          position: absolute;
+          top: -7px;
+          background: #7d7caa; }
+        section.services-page section.main-section header .line::before {
+          left: 0; }
+        section.services-page section.main-section header .line::after {
+          right: 0; }
+      section.services-page section.main-section header h5 {
+        color: #2f2e65;
+        font-family: "Segoe";
+        font-weight: bold;
+        margin-top: 15px; }
+
+section.services-content article .gray-bg {
+  background-color: #f1f4ff; }
+
+section.services-content article .gray-bg, section.services-content article .white-bg {
+  padding: 9rem 0; }
+
+section.services-content article .services-details {
+  color: #2f2e65;
+  text-align: start; }
+  section.services-content article .services-details h3 {
+    font-size: 40px;
+    font-family: "29ltbukrabold";
+    font-weight: bold;
+    margin-bottom: 20px; }
+    @media (max-width: 600px) {
+      section.services-content article .services-details h3 {
+        font-size: 30px; } }
+  section.services-content article .services-details p {
+    font-family: "Segoe";
+    font-weight: bold;
+    font-size: 20px; }
+
+section.team-page {
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  section.team-page section.main-section {
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.team-page section.main-section header {
+      text-align: center; }
+      section.team-page section.main-section header h1 {
+        font-size: 40px;
+        font-family: "29ltbukrabold";
+        font-weight: bold;
+        color: #2f2e65; }
+        @media (max-width: 600px) {
+          section.team-page section.main-section header h1 {
+            font-size: 30px; } }
+
+.team-content-section {
+  padding: 4rem 0; }
+  .team-content-section article {
+    background-image: url("../assets/bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; }
+    .team-content-section article .card {
+      border: none;
+      color: #2f2e65;
+      background-color: #fff; }
+      .team-content-section article .card img {
+        width: 60%;
+        margin: auto; }
+      .team-content-section article .card .card-body {
+        text-align: center; }
+        .team-content-section article .card .card-body h3 {
+          font-family: "29ltbukrabold";
+          font-weight: bold;
+          color: #2f2e65;
+          margin: 0; }
+        .team-content-section article .card .card-body h4 {
+          font-family: "29ltbukrabold";
+          font-weight: bold;
+          color: #2f2e65;
+          font-size: 16px;
+          margin-top: 10px; }
+        .team-content-section article .card .card-body p {
+          font-family: "Segoe";
+          font-weight: bold;
+          color: #2f2e65;
+          font-size: 15px; }
+      .team-content-section article .card .card-footer {
+        background: #2f2e65;
+        border: none;
+        text-align: center;
+        border: none; }
+        .team-content-section article .card .card-footer a {
+          font-family: "29ltbukrabold";
+          font-weight: bold;
+          color: #fff !important;
+          text-decoration: none; }
+    .team-content-section article nav .pagination .page-item {
+      margin: 4px; }
+      .team-content-section article nav .pagination .page-item a {
+        color: #2f2e65;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+        .team-content-section article nav .pagination .page-item a:hover {
+          background-color: #2f2e65;
+          color: #fff; }
+      .team-content-section article nav .pagination .page-item:first-child a, .team-content-section article nav .pagination .page-item:last-child a {
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+        color: #2f2e65; }
+        .team-content-section article nav .pagination .page-item:first-child a:hover, .team-content-section article nav .pagination .page-item:last-child a:hover {
+          background-color: #2f2e65;
+          color: #fff; }
 
 footer.footer-section {
   background-color: #2f2e65;
