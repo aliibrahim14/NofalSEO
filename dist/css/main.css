@@ -20,9 +20,9 @@ section.navbar-section nav.navbar .navbar-toggler {
 section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav {
   overflow: hidden;
   background-color: #fff; }
-  @media (min-width: 992px) {
+  @media (min-width: 991px) {
     section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav {
-      width: 70%;
+      width: 77%;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
@@ -30,7 +30,9 @@ section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav {
       border-radius: 20px; } }
   @media (max-width: 992px) {
     section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav {
-      margin-top: 15px !important; } }
+      margin-top: 15px !important;
+      border: 1px solid #2f2e65;
+      border-radius: 8px; } }
   section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav .nav-item .nav-link {
     color: #2f2e65;
     -webkit-transition: all .3s;
@@ -40,6 +42,10 @@ section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav {
     padding-left: 1rem;
     font-family: "Segoe";
     font-weight: bold; }
+    @media (max-width: 768px) {
+      section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav .nav-item .nav-link {
+        line-height: 35px;
+        font-size: 18px; } }
     section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav .nav-item .nav-link:hover {
       background-color: #f1f4ff; }
     section.navbar-section nav.navbar #navbarSupportedContent ul.navbar-nav .nav-item .nav-link.active {
@@ -159,29 +165,33 @@ section.home-page {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  @media (min-width: 768px) {
-    section.home-page section.main-section .row {
-      min-height: calc(100vh - 58px); } }
-  section.home-page section.main-section .row main {
-    text-align: start; }
-    section.home-page section.main-section .row main header h1 {
-      font-size: 45px;
-      font-family: "29ltbukrabold";
-      font-weight: bold;
-      color: #2f2e65; }
-      @media (max-width: 600px) {
-        section.home-page section.main-section .row main header h1 {
-          font-size: 30px; } }
-    section.home-page section.main-section .row main article {
-      margin-top: 20px; }
-      section.home-page section.main-section .row main article p {
-        color: #7d7caa;
-        font-family: "Segoe";
-        font-weight: bold; }
-        @media (min-width: 992px) {
-          section.home-page section.main-section .row main article p {
-            width: 70%;
-            font-size: 24px; } }
+  section.home-page section.main-section .row {
+    min-height: calc(100vh - 58px); }
+    @media (max-width: 768px) {
+      section.home-page section.main-section .row {
+        -webkit-box-align: start !important;
+            -ms-flex-align: start !important;
+                align-items: flex-start !important; } }
+    section.home-page section.main-section .row main {
+      text-align: start; }
+      section.home-page section.main-section .row main header h1 {
+        font-size: 45px;
+        font-family: "29ltbukrabold";
+        font-weight: bold;
+        color: #2f2e65; }
+        @media (max-width: 600px) {
+          section.home-page section.main-section .row main header h1 {
+            font-size: 30px; } }
+      section.home-page section.main-section .row main article {
+        margin-top: 20px; }
+        section.home-page section.main-section .row main article p {
+          color: #7d7caa;
+          font-family: "Segoe";
+          font-weight: bold; }
+          @media (min-width: 992px) {
+            section.home-page section.main-section .row main article p {
+              width: 70%;
+              font-size: 24px; } }
 
 .services-section {
   padding: 4rem 0; }

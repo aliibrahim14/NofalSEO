@@ -5,19 +5,25 @@ section.navbar-section {
         }
         #navbarSupportedContent {
             ul.navbar-nav {
-                @media(min-width: 992px){
-                    width: 70%;
+                @media(min-width: 991px){
+                    width: 77%;
                     justify-content: space-between;
                     border: 1px solid $mainColor;
                     border-radius: 20px;
                 }
                 @media(max-width: 992px){
                     margin-top: 15px !important;
+                    border: 1px solid #2f2e65;
+                    border-radius: 8px;
                 }
                 overflow: hidden;
                 background-color: #fff;
                 .nav-item {
                     .nav-link {
+                        @media (max-width: 768px) {
+                            line-height: 35px;
+                            font-size: 18px;
+                        }
                         color: $mainColor;
                         transition: all .3s;
                         text-align: start;
